@@ -1,0 +1,24 @@
+{
+    "name": "playwright_poc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test",
+        "test-us": "npx playwright test --update-snapshots"
+    },
+    "keywords": [
+        "playwright",
+        "playwright Poc",
+        "playwright test runner",
+        "Lakshmi Yaswanth"
+    ],
+    "author": "Lakshmi Yaswanth",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.12.3",
+        "playwright": "^1.13.0",
+        "ts-node": "10.0.0",
+        "typescript": "4.3.2"
+    }
+}

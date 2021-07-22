@@ -1,0 +1,167 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "F:/playwright_poc/test-results",
+        "repeatEach": 1,
+        "retries": 3,
+        "name": "chromium",
+        "testDir": "F:/playwright_poc",
+        "testIgnore": [],
+        "testMatch": [
+          "login.test.ts"
+        ],
+        "timeout": 1000000
+      }
+    ],
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "F:/playwright_poc",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "workers": 4,
+    "_launch": []
+  },
+  "suites": [
+    {
+      "title": "tests\\login.test.ts",
+      "file": "tests/login.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login as user",
+          "file": "tests/login.test.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test 1",
+              "ok": false,
+              "tests": [
+                {
+                  "timeout": 1000000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 16454,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"RevaturePro - \u001b[7mDashboard\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"RevaturePro - \u001b[7mLogin\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"RevaturePro - \u001b[7mDashboard\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"RevaturePro - \u001b[7mLogin\u001b[27m\"\u001b[39m\n    at F:\\playwright_poc\\tests\\login.test.ts:11:36\n    at WorkerRunner._runTestWithBeforeHooks (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:390:7)"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "F:\\playwright_poc\\test-results\\tests-login-test-1-chromium\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "F:\\playwright_poc\\test-results\\tests-login-test-1-chromium\\test-failed-1.png"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 7189,
+                      "error": {
+                        "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://qa2.revature.com/login\", waiting until \"load\"\n============================================================",
+                        "stack": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://qa2.revature.com/login\", waiting until \"load\"\n============================================================\n    at F:\\playwright_poc\\tests\\login.test.ts:6:20\n    at FixtureRunner.resolveParametersAndRunHookOrTest (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\fixtures.js:287:12)\n    at WorkerRunner._runHooks (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:439:9)\n    at WorkerRunner._runTestWithBeforeHooks (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:375:7)"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "F:\\playwright_poc\\test-results\\tests-login-test-1-chromium-retry1\\trace.zip"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 4868,
+                      "error": {
+                        "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://qa2.revature.com/login\", waiting until \"load\"\n============================================================",
+                        "stack": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://qa2.revature.com/login\", waiting until \"load\"\n============================================================\n    at F:\\playwright_poc\\tests\\login.test.ts:6:20\n    at FixtureRunner.resolveParametersAndRunHookOrTest (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\fixtures.js:287:12)\n    at WorkerRunner._runHooks (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:439:9)\n    at WorkerRunner._runTestWithBeforeHooks (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:375:7)"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "F:\\playwright_poc\\test-results\\tests-login-test-1-chromium-retry2\\trace.zip"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 3,
+                      "status": "failed",
+                      "duration": 4192,
+                      "error": {
+                        "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://qa2.revature.com/login\", waiting until \"load\"\n============================================================",
+                        "stack": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://qa2.revature.com/login\", waiting until \"load\"\n============================================================\n    at F:\\playwright_poc\\tests\\login.test.ts:6:20\n    at FixtureRunner.resolveParametersAndRunHookOrTest (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\fixtures.js:287:12)\n    at WorkerRunner._runHooks (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:439:9)\n    at WorkerRunner._runTestWithBeforeHooks (F:\\playwright_poc\\node_modules\\@playwright\\test\\lib\\test\\workerRunner.js:375:7)"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 3,
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "F:\\playwright_poc\\test-results\\tests-login-test-1-chromium-retry3\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "file": "tests/login.test.ts",
+              "line": 8,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
